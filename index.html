@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Static Pages + Lightweight Services</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+</head>
+<body>
+	<h1>Static Pages + Lightweight Services</h1>
+	<div id="response">Node </div>
+	<script>
+		$.ajax({
+			url: '/node',
+			success: function(data){
+				$("#response").append(data);
+			}
+		});
+
+	</script>
+</body>
+</html>
